@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} Jobportal - My Profile {% endblock title %}
+
+{% block content %}
+    <div class="content-section">
+        <div class="media">
+            <img class="rounded-circle account-img border" src="{{ user.profile.image.url }}" alt="Profile picture">
+            <div class="media-body">
+                {% with user.first_name|add:' '|add:user.last_name as name %}
+                    <h2 class="account-heading">{{ name }}</h2>
+                {% endwith %}
+                <p class="text-secondary">{{ user.email }}</p>
+            </div>
+        </div>
+        <p class="text-secondary">{{ user.username }}</p>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Profile Info</legend>
+                {{ user_update_form|crispy }}
+                {{ profile_update_form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-success" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

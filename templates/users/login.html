@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Jobportal - Login {% endblock %}
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <div class="content-section w-75">
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Login to jobportal!</legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit">Login</button>
+                </div>
+            </form>
+            <div class="border-top pt-3">
+                <small class="text-muted">
+                    Don't have an account? <a class="ml-2" href="{% url 'register' %}">Register now!</a>
+                </small>
+            </div>
+        </div>
+    </div>
+{% endblock %}
