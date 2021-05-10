@@ -3,30 +3,48 @@
 {% block title %} Jobportal - Welcome! {% endblock %}
 
 {% block jumbotron %}
+
+
+
+
+
+        <br>  <h1 align="center">Hire the best freelancers for any job, online.</h1>
+        <h2 align="center">Largest Job portal of Pakistan</h2>
+
+
+
+    <br>
+     <div class="col-md-12  text-center">
+<button  type="button" class="btn btn-success btn-lg text-center" >Hire a Freelancer</button>
+    <button type="button" class="btn btn-outline-info btn-lg" >Earn Money Online</button>
+        </div>
+
+
     <div class="bd-example">
         <div id="carousel_jobs_home" class="carousel slide" data-ride="carousel">
+
             <ol class="carousel-indicators">
                 <li data-target="#carousel_jobs_home" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel_jobs_home" data-slide-to="1"></li>
                 <li data-target="#carousel_jobs_home" data-slide-to="2"></li>
-            </ol>
+            </ol>http://127.0.0.1:8000/
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{% static 'img/carousel-slide1.jpg' %}" class="d-block" alt="Slide 1">
+                    <img src="{% static 'img/img2.jpg' %}" class="d-block" alt="Slide 1">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{% static 'img/carousel-slide2.jpg' %}" class="d-block" alt="Slide 2">
+                    <img src="{% static 'img/img1.jpg' %}" class="d-block" alt="Slide 2">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{% static 'img/carousel-slide3.jpg' %}" class="d-block" alt="Slide 3">
+                    <img src="{% static 'img/img3.jpg' %}" class="d-block" alt="Slide 3">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -43,45 +61,45 @@
             </a>
         </div>
     </div>
+
 {% endblock %}
 
-{% block content %}
-    <div class="d-flex justify-content-center">
-        <div class="content-section w-50">
-            <form method="GET">
-                {#                {% csrf_token %}#}
-                {#                {{ form|crispy }}#}
-                <button class="btn btn-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
 
+{% block content %}
+
+
+
+
+<br>
+<br>
+<br>
+
+
+    <h1>Need something done?</h1>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>Post a job</h2>
                 <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui.
+                    It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes.
+
                 </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>Choose freelancers</h2>
                 <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui.
+                   Whatever your needs, there will be a freelancer to get it done: from web design, mobile app development, virtual assistants, product manufacturing, and graphic design (and a whole lot more).
+
                 </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>Pay safely</h2>
                 <p>
-                    Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                    ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus.
+                    With secure payments and thousands of reviewed professionals to choose from, Freelancer.com is the simplest and safest way to get work done online.
+
                 </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
             </div>
